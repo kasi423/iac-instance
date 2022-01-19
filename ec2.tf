@@ -14,7 +14,7 @@ resource "aws_ec2_host" "test" {
   instance_type     = "t2.micro"
   ami               = "ami-08e4e35cccc6189f4"
   key_name          = "tower43"
-  availability_zone = "us-east-1a"
+  availability_zone = "us-east-1"
   host_recovery     = "on"
   auto_placement    = "on"
 }
