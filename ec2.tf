@@ -14,7 +14,7 @@ resource "aws_instance" "test" {
   instance_type     = "t2.micro"
   ami               = "ami-08e4e35cccc6189f4"
   key_name          = "tower43"
-  region            = "us-east-1"
+  subnet_id         = "subnet-0c96eb1b3abaa2adc"
   #host_recovery     = "on"
   #auto_placement    = "on"
 }
