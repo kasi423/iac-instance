@@ -17,6 +17,11 @@
   #host_recovery     = "on"
   #auto_placement    = "on"
 #}
+provider "aws" {
+  access_key  = "AKIAVZAZMYNURSFQQPO2"
+  secret_key  = "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"
+  region = "us-east-1"
+}
 
 resource "aws_instance" "http" {
   ami           = "ami-08e4e35cccc6189f4"
