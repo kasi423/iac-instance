@@ -22,8 +22,9 @@
 #}
 provider "aws" {
   region  = "us-east-1"
-  shared_credentials_file = "~/.aws/credentials"
-  profile = "default"
+  access_key = "AKIATMFLBAZEX6X66RXQ"
+  secret_access_key = "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"
+
 }
 #resource "aws_instance" "http" {
  # ami           = "ami-08e4e35cccc6189f4"
