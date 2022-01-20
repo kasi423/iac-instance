@@ -18,8 +18,6 @@
   #auto_placement    = "on"
 #}
 provider "aws" {
-  access_key  = "AKIAVZAZMYNU5ULM2FZV"
-  secret_key  = "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"
   region      = "us-east-1"
 }
 
