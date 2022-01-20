@@ -17,17 +17,21 @@
   #host_recovery     = "on"
   #auto_placement    = "on"
 #}
+#provider "aws" {
+#  region      = "us-east-1"
+#}
 provider "aws" {
-  region      = "us-east-1"
+  region  = "us-east-1"
+  shared_credentials_file = "~/.aws/credentials"
+  profile = "default"
 }
-
-resource "aws_instance" "http" {
-  ami           = "ami-08e4e35cccc6189f4"
-  instance_type = "t2.micro"
+#resource "aws_instance" "http" {
+ # ami           = "ami-08e4e35cccc6189f4"
+ # instance_type = "t2.micro"
   #key_name      = aws_key_pair.user_key.key_name
-  vpc_security_group_ids = ["sg-063368c2a0b91deed"]
-  subnet_id = "subnet-0c96eb1b3abaa2adc"
-  tags = {
-    Name = "http-instance"
-  }
-}
+#  vpc_security_group_ids = ["sg-063368c2a0b91deed"]
+#  subnet_id = "subnet-0c96eb1b3abaa2adc"
+#  tags = {
+ #   Name = "http-instance"
+ # }
+#}
