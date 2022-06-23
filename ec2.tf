@@ -37,7 +37,7 @@ provider "aws" {
  # }
 #}
 resource "aws_instance" "myFirstInstance" {
-  ami           = "ami-0318607057033340e"
+  ami           = "ami-06640050dc3f556bb"
   key_name      = "doc-vm"
   instance_type = "t2.micro"
   tags= {
