@@ -38,7 +38,7 @@ provider "aws" {
 #}
 resource "aws_instance" "myFirstInstance" {
   ami           = "ami-00c493b8ae7f7790f"
-  key_name      = "key54"
+  key_name      = "doc-vm"
   instance_type = "t2.micro"
   tags= {
     Name = "jenkins_instance"
