@@ -20,10 +20,10 @@
 #provider "aws" {
 #  region      = "us-east-1"
 #}
-provider "aws" {
-  region  = "us-east-1"
-  access_key = "AKIAVFLXMWKCFBEOKJCJ"
-  secret_key = "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"
+#provider "aws" {
+#  region  = "us-east-1"
+#  access_key = "AKIAVFLXMWKCFBEOKJCJ"
+#  secret_key = "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"
 
 }
 #resource "aws_instance" "http" {
