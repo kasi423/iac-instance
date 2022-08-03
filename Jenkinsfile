@@ -9,6 +9,11 @@ pipeline{
                 git branch: 'main', credentialsId: 'git-hub_credentials', url: 'https://github.com/kasi423/iac-instance.git'
             }
         }
+        stage('Terraform validate'){
+            steps{
+               sh 'terraform validate'
+            }
+        }
         stage('Terraform Init'){
             steps{
                sh 'terraform init'
